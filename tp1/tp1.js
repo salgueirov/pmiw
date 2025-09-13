@@ -34,7 +34,7 @@ function draw() {
       let op = map(distancia, 0, diagonal / 2, 255, 0);
       
       if ((x + y) % 2 == 0) {
-        colorCu = color(0, op); // color cuadrado con opacidad
+        colorCu = color(0, op); // color cuadrado sin opacidad
         colorCir = color(255);
       } else {
         colorCu = color(255, op); // color cuadrado con opacidad
@@ -42,25 +42,25 @@ function draw() {
       }
 
 
-      if (x == 5 && y >= 6 && y <= 10) { // cuadrados 7, 8, 9, 10 y 11 de la columna 6
+      if (x == 5 && y >= 6 && y <= 10) { // cuadrados de la columna 6
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, true, true, false, false);
-      } else if (y == 5 && x >=6 && x <=10) { // cuadrados 7, 8, 9, 10 y 11 de la fila 6
+      } else if (y == 5 && x >=6 && x <=10) { // cuadrados de la fila 6
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, true, false, true, false);
-      } else if (y == 0 && x >=6 && x <=10) { // cuadrados 7, 8, 9, 10 y 11 de la fila 1
+      } else if (y == 0 && x >=6 && x <=10) { // cuadrados de la fila 1
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, true, false, false, true);
       } else if (y >= 6 && y <= 10 && x >= 0 && x <= 5) { // part inferior izq 1/4
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, true, false, false, true);
       } else if (x >= 6 && y >= 1 && y <= 5) { // part superior der 1/4
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, true, false, false, true);
-      } else if (x == 0 && y >= 6 && y <=10) { // cuadrados 7, 8, 9, 10 y 11 de la columna 1
+      } else if (x == 0 && y >= 6 && y <=10) { // cuadrados de la columna 1
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, false, false, false, true);
-      } else if (x == 10 && y >= 0 && y <=5) { // cuadrados 1, 2, 3, 4, 5 de la columna 11
+      } else if (x == 10 && y >= 0 && y <=5) { // cuadrados de la columna 11
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, true, false, false, false);
-      } else if (x == 5 && y == 5) { // sexto cuadrado de la sexta fila
+      } else if (x == 5 && y == 5) { // 6to cuadrado de la fila 6
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, false, false, false, false);
-      } else if (x == 5) { // sexta columna
+      } else if (x == 5) { // columna 6
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, false, false, true, true);
-      } else if (y == 5) { // sexta fila
+      } else if (y == 5) { // fila 6
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, false, true, false, true);
       } else {
         dibujarCuadradoConCirculos(x * tam, y * tam, tam, colorCu, colorCir, false, true, true, false);
@@ -82,3 +82,4 @@ function mousePressed() {
   numCuadrados = numCuadradosInicial;
   tam = width / (numCuadrados + 10);
 }
+
