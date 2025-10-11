@@ -1,3 +1,6 @@
+//https://youtu.be/u62BOZ-DqLk?si=N8I4i8zB7ii7ezll
+//Salgueiro Valentina 119138/1
+
 let pantallaActual = 0;
 let CantPantalla = 17;
 let imgHistoria = [];
@@ -119,3 +122,4 @@ function mousePressed() {
     }
   }
 }
+
