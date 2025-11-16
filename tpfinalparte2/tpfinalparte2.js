@@ -1,3 +1,6 @@
+//https://youtu.be/5D19NKHMtt4
+//Salgueiro Valentina 119138/1
+
 let juego;
 let imgFondo = [];
 let imgPeter = [];
@@ -52,3 +55,4 @@ function keyPressed() {
 function keyReleased() {
   juego.teclaSoltada();
 }
+
