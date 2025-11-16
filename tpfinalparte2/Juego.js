@@ -76,9 +76,11 @@ class Juego {
     textSize(20);
     text("¿Cómo jugar?", width/2, 200);
 
-    textSize(18);
-    text("Peter Pan (Jugador 1)\n <- -> | K bloquear | L atacar", width/2, 240);
-    text("Garfio (Jugador 2)\n A D | G bloquear | F atacar", width/2, 300);
+   textSize(18);
+    text("Peter Pan (Jugador 1)", width/2, 240);
+    text("<- -> | K bloquear | L atacar", width/2, 260);
+    text("Garfio (Jugador 2)", width/2, 300);
+    text("A D | G bloquear | F atacar", width/2, 320);
 
     noStroke();
     fill(0, 80);
@@ -170,3 +172,4 @@ class Juego {
     }
   }
 }
+
